@@ -23,6 +23,7 @@
   "dependencies": {
     "commander": "^2.19.0",
     "remark-parse": "^6.0.3",
+    "remark-stringify": "^6.0.4",
     "unified": "^7.1.0"
   },
   "devDependencies": {
