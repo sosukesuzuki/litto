@@ -5,7 +5,7 @@
   "license": "MIT",
   "main": "./index.js",
   "bin": {
-    "prettier": "./bin/litto.js"
+    "litto": "./bin/litto.js"
   },
   "scripts": {
     "start": "rollup -c -w",
