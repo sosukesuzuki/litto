@@ -48,6 +48,11 @@ $ npx litto --write ./hoge.md
 
 WIP
 
+## TODO
+
+- [ ] テスト書く
+- [ ] 型定義書く
+
 ## ライセンス
 
 MIT
