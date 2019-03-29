@@ -5,6 +5,9 @@
   "license": "MIT",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
+  "bin": {
+    "prettier": "./bin/prettier.js"
+  },
   "scripts": {
     "start": "rollup -c -w",
     "build": "rollup -c",
