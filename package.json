@@ -1,0 +1,33 @@
+{
+  "name": "litto",
+  "version": "1.0.0",
+  "author": "Sosuke Suzuki <aosukeke@gmail.com>",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "module": "dist/index.es.js",
+  "scripts": {
+    "start": "rollup -c -w",
+    "build": "rollup -c",
+    "format": "prettier --write ./**.{js,ts,md,json}",
+    "lint": "eslint ./ --ext ts",
+    "lint:fix": "yarn lint --fix"
+  },
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "commander": "^2.19.0",
+    "remark-parse": "^6.0.3",
+    "unified": "^7.1.0"
+  },
+  "devDependencies": {
+    "@typescript-eslint/parser": "^1.5.0",
+    "eslint": "^5.15.3",
+    "eslint-plugin-prettier": "^3.0.1",
+    "prettier": "^1.16.4",
+    "rollup": "^1.7.4",
+    "rollup-plugin-node-resolve": "^4.0.1",
+    "rollup-plugin-typescript2": "^0.20.1",
+    "typescript": "^3.3.4000"
+  }
+}
