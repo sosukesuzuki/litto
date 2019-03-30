@@ -1,6 +1,6 @@
 {
   "name": "litto",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "author": "Sosuke Suzuki <aosukeke@gmail.com>",
   "license": "MIT",
   "main": "./index.js",
