@@ -3,6 +3,7 @@
 const unified = require("unified");
 const markdown = require("remark-parse");
 const stringify = require("remark-stringify");
+const prettier = require("prettier");
 
 function parse(text) {
   const processor = unified().use(markdown);
@@ -41,11 +42,17 @@ function searchListAndReplaceWithTodo(ast) {
   return scan(ast);
 }
 
-function litto(text) {
+function litto(text, ops = { withFormat: false }) {
+  const { withFormat } = ops;
   const ast = parse(text);
-  const formattedAst = searchListAndReplaceWithTodo(ast);
-  const formatted = stringifyFromAst(formattedAst);
-  return formatted;
+  const convertedAst = searchListAndReplaceWithTodo(ast);
+  const convertedText = stringifyFromAst(convertedAst);
+
+  if (withFormat) {
+    return prettier.format(convertedText, { parser: "markdown" });
+  } else {
+    return convertedText;
+  }
 }
 
 module.exports = {

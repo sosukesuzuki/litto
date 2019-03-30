@@ -10,27 +10,23 @@ function run() {
   program
     .version("1.0.0")
     .arguments("<filename>")
-    .action(filename => {
-      getFileContentOrNull(filename)
-        .then(value => {
-          const formatted = litto(value);
-          console.log(formatted);
-        })
-        .catch(err => console.error(err.message));
-    })
-    .option("-w --write <filename>")
+    .option("-w --write")
+    .option("-f --format")
     .parse(process.argv);
 
-  const filename = program.write;
-  if (filename) {
+  if (program.args.length !== 0) {
+    const filename = program.args[0];
     getFileContentOrNull(filename).then(value => {
-      const formatted = litto(value);
-      fs.writeFile(filename, formatted, "utf8", err => {
-        if (err) {
-          console.error(err.message);
-          process.exit(1);
-        }
-      });
+      const converted = litto(value, { withFormat: program.format });
+      if (program.write) {
+        fs.writeFile(filename, converted, "utf8", err => {
+          if (err) {
+            throw err;
+          }
+        });
+      } else {
+        console.log(converted);
+      }
     });
   }
 }
