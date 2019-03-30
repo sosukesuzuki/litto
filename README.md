@@ -4,20 +4,20 @@
 
 ## 概要
 
-Markdownのリストをチェックリストに変換するためのライブラリです。
-JavaScript APIとしてもCLIコマンドとしても使うことができます。
+Markdown のリストをチェックリストに変換するためのライブラリです。
+JavaScript API としても CLI コマンドとしても使うことができます。
 
 ## 使い方
 
-npmを使ってインストールできます。
+npm を使ってインストールできます。
 
 ```
 npm install -g litto
 ```
 
-### CLIコマンドとして使う
+### CLI コマンドとして使う
 
-以下のようなMarkdownファイル(`foo.md`)を作ります。
+以下のような Markdown ファイル(`foo.md`)を作ります。
 
 ```md
 # foo.md
@@ -26,7 +26,7 @@ npm install -g litto
 - bar
 ```
 
-そしてfileのパスを指定して`litto`コマンドを使うとリストをチェックリストに変換したものが出力されます。
+そして file のパスを指定して`litto`コマンドを使うとリストをチェックリストに変換したものが出力されます。
 
 ```sh
 $ litto ./foo.md
@@ -52,7 +52,7 @@ $ litto --format ./foo.md
 - [ ] bar
 ```
 
-### JavaScriptのAPIとして使う
+### JavaScript の API として使う
 
 WIP
 
