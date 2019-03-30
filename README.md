@@ -9,12 +9,10 @@ JavaScript APIとしてもCLIコマンドとしても使うことができます
 
 ## 使い方
 
-yarnやnpmを使ってインストールできます。
+npmを使ってインストールできます。
 
 ```
-yarn add litto
-or
-npm install --save litto
+npm install -g litto
 ```
 
 ### CLIコマンドとして使う
@@ -31,7 +29,7 @@ npm install --save litto
 そしてfileのパスを指定して`litto`コマンドを使うとリストをチェックリストに変換したものが出力されます。
 
 ```sh
-$  npx litto ./hoge.md
+$ litto ./foo.md
 # foo.md
 
 -   [ ] foo
@@ -42,6 +40,16 @@ $  npx litto ./hoge.md
 
 ```sh
 $ npx litto --write ./hoge.md
+```
+
+また、`--format`オプションを使うことで、[Prettier](https://github.com/prettier/prettier)によるフォーマットをかけることができます。
+
+```sh
+$ litto --format ./foo.md
+# foo.md
+
+- [ ] foo
+- [ ] bar
 ```
 
 ### JavaScriptのAPIとして使う
