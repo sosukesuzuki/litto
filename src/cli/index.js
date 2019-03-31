@@ -1,7 +1,6 @@
 "use strict";
 
 const program = require("commander");
-const fs = require("fs");
 const colors = require("colors/safe");
 const litto = require("../litto").litto;
 const writeFileContent = require("./utils/writeFileContent").writeFileContent;
