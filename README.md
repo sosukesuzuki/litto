@@ -40,6 +40,8 @@ $ litto ./foo.md
 
 ```sh
 $ litto --write ./hoge.md
+hoge.md
+Done.
 ```
 
 また、`--format`オプションを使うことで、[Prettier](https://github.com/prettier/prettier)によるフォーマットをかけることができます。
