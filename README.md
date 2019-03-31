@@ -39,7 +39,7 @@ $ litto ./foo.md
 また、`--write`オプションを使うことでファイルを上書きすることができます。
 
 ```sh
-$ npx litto --write ./hoge.md
+$ litto --write ./hoge.md
 ```
 
 また、`--format`オプションを使うことで、[Prettier](https://github.com/prettier/prettier)によるフォーマットをかけることができます。
