@@ -1,6 +1,6 @@
 {
   "testEnvironment": "node",
-  "testRegex": "(/**tests**/.\*|\\.spec)\\.(js)$",
+  "testRegex": "(/__tests__/.*|\\.spec)\\.(js)$",
   "moduleFileExtensions": ["js", "json"],
   "rootDir": "./"
 }
