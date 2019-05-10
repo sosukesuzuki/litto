@@ -2,22 +2,21 @@
 
 **li**st **t**o **to**do-list.
 
-## 概要
+## Overview
 
-Markdown のリストをチェックリストに変換するためのライブラリです。
-JavaScript API としても CLI コマンドとしても使うことができます。
+litto is the CLI tool to convert list to check-list in Markdown.
 
-## 使い方
+## Install
 
-npm を使ってインストールできます。
+You can install it with npm.
 
 ```
 npm install -g litto
 ```
 
-### CLI コマンドとして使う
+## Usage
 
-以下のような Markdown ファイル(`foo.md`)を作ります。
+Create the Markdown file named `foo.md` like below:
 
 ```md
 # foo.md
@@ -26,7 +25,7 @@ npm install -g litto
 - bar
 ```
 
-そして file のパスを指定して`litto`コマンドを使うとリストをチェックリストに変換したものが出力されます。
+If you call litto command with `foo.md`'s path, the text converted to check-list will be outputted to console.
 
 ```sh
 $ litto ./foo.md
@@ -36,7 +35,7 @@ $ litto ./foo.md
 -   [ ] bar
 ```
 
-また、`--write`オプションを使うことでファイルを上書きすることができます。
+If you use `--write`, you can rewrite the file with converted text.
 
 ```sh
 $ litto --write ./hoge.md
@@ -44,7 +43,7 @@ hoge.md
 Done.
 ```
 
-また、`--format`オプションを使うことで、[Prettier](https://github.com/prettier/prettier)によるフォーマットをかけることができます。
+If you use `--format`, you can format the text with [Prettier](https://github.com/prettier/prettier).
 
 ```sh
 $ litto --format ./foo.md
@@ -54,15 +53,6 @@ $ litto --format ./foo.md
 - [ ] bar
 ```
 
-### JavaScript の API として使う
-
-WIP
-
-## TODO
-
-- [x] テスト書く
-- [ ] 型定義書く
-
-## ライセンス
+## License
 
 MIT
