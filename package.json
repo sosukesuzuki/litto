@@ -8,8 +8,6 @@
     "litto": "./bin/litto.js"
   },
   "scripts": {
-    "start": "rollup -c -w",
-    "build": "rollup -c",
     "format": "prettier --write \"{,src/**/}*.{js,md,json}\"",
     "lint": "eslint ./ --ext ts",
     "lint:fix": "yarn lint --fix",
