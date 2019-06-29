@@ -1,6 +1,6 @@
 {
   "name": "litto",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "author": "Sosuke Suzuki <aosukeke@gmail.com>",
   "license": "MIT",
   "main": "./index.js",
@@ -8,7 +8,10 @@
     "type": "git",
     "url": "https://github.com/sosukesuzuki/litto.git"
   },
-  "keywords": ["markdown", "nodejs"],
+  "keywords": [
+    "markdown",
+    "nodejs"
+  ],
   "bin": {
     "litto": "./bin/litto.js"
   },
