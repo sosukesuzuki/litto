@@ -4,6 +4,11 @@
   "author": "Sosuke Suzuki <aosukeke@gmail.com>",
   "license": "MIT",
   "main": "./index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sosukesuzuki/litto.git"
+  },
+  "keywords": ["markdown", "nodejs"],
   "bin": {
     "litto": "./bin/litto.js"
   },
